@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fournisseur haut de gamme d'ours en peluche faits main fabriqués en France">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'
+        integrity='sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=='
+        crossorigin='anonymous' />
+    <link rel="shortcut icon" type="image/png" href="/frontend/favicon.jpg">
+    <link rel="stylesheet" href="/src/pages/styles.css">
+    <title>Orinoco Ours en peluche faits main fabriqués en France</title>
+</head>
+
+<body>
+
+    <%- include('../components/nav/nav.html', {
+        "back" : true
+      }); %>
+    <%- include('../components/header/header.html'); %>
+    <main>
+        <section>
+            <%- include('../components/product/product.html', {
+            nom : "Norbert",
+            prix : "29€",
+            "description" : "un super nounours"
+        }); %>
+            <label for="color-select">Coloris:</label>
+
+            <select name="colors" id="color-select">
+                <option value="">Choisissez votre couleur</option>
+                <option value="tan">Tan</option>
+                <option value="chocolat">Chocolat</option>
+                <option value="noir">Noir</option>
+                <option value="blanc">Blanc</option>
+            </select>
+        </section>
+        <section id="add-to-cart" class="button">
+            <p id="add_to_cart" class="button">
+                <button type="submit" name="Submit" class="btn">
+                    <span>Ajouter au panier</span>
+                </button>
+            </p>
+        </section>
+    </main>
+</body>
+<%- include('../components/footer/footer.html'); %>
+
+</html>

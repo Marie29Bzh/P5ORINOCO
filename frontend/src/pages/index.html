@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fournisseur haut de gamme d'ours en peluche faits main fabriqués en France">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'
+        integrity='sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=='
+        crossorigin='anonymous' />
+    <link rel="shortcut icon" type="image/png" href="/frontend/favicon.jpg">
+    <link rel="stylesheet" href="/src/pages/styles.css">
+    <title>Orinoco Ours en peluche faits main fabriqués en France</title>
+</head>
+
+<body>
+    <%- include('../components/nav/nav.html', { "back" : false }); %>
+    <%- include('../components/header/header.html'); %>
+    <main>
+        <section>
+            <%- include('../components/product/product.html', {
+            nom : "Norbert",
+            prix : "29€",
+            "description" : "un super nounours"
+        }); %>
+
+            <%- include('../components/product/product.html', {
+            nom : "Arnold",
+            prix : "39€",
+            "description" : "un super nounours"
+        }); %>
+
+            <%- include('../components/product/product.html', {
+            nom : "Lenny et Carl",
+            prix : "59€",
+            "description" : "un super nounours"
+        }); %>
+
+            <%- include('../components/product/product.html', {
+            nom : "Gustav",
+            prix : "45€",
+            "description" : "un super nounours"
+        }); %>
+
+            <%- include('../components/product/product.html', {
+            nom : "Garfunkel",
+            prix : "55€",
+            "description" : "un super nounours"
+        }); %>
+        </section>
+    </main>
+</body>
+<%- include('../components/footer/footer.html'); %>
+
+</html>
